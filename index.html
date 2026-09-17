@@ -3,10 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>Sentence Maker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Sentence Maker</h1>
-  <p>Open the browser console (F12) to see your story!</p>
+  <div class="container">
+    <h1>📝 Sentence Maker</h1>
+    <p class="subtitle">Fill in the blanks and generate your own silly story!</p>
+
+   <form id="storyForm">
+  <label for="name">Your name</label>
+  <input type="text" id="name" placeholder="e.g. Alex" required>
+
+  <label for="adjective">Adjective (describes you)</label>
+  <input type="text" id="adjective" placeholder="e.g. brave, clumsy, curious" required>
+
+  <label for="place">Place</label>
+  <input type="text" id="place" placeholder="e.g. jungle, cave, desert" required>
+
+  <label for="animal">Animal</label>
+  <input type="text" id="animal" placeholder="e.g. lion, wolf, dragon" required>
+
+  <label for="emotion">Emotion</label>
+  <input type="text" id="emotion" placeholder="e.g. fear, excitement, panic" required>
+
+  <label for="item">Item</label>
+  <input type="text" id="item" placeholder="e.g. sword, flashlight, map" required>
+
+  <label for="verb">Verb (an action)</label>
+  <input type="text" id="verb" placeholder="e.g. fight, run, hide" required>
+
+  <label for="treasure">Treasure</label>
+  <input type="text" id="treasure" placeholder="e.g. gold coin, ancient gem, map" required>
+
+  <div class="button-row">
+    <button type="submit">Generate Story</button>
+    <button type="button" id="fillExample">Fill Example</button>
+    <button type="button" id="clearForm">Clear</button>
+  </div>
+</form>
+
+    
+    <div id="output"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>

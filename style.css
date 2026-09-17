@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #45d885, #45b24d);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  background: white;
+  max-width: 480px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #444;
+  margin-top: 8px;
+}
+
+input {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: none;
+  border-color: greenyellow;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#storyForm button[type="submit"] {
+  background-color: #764ba2;
+  color: white;
+}
+
+#storyForm button[type="submit"]:hover {
+  background-color: #5f3d85;
+}
+
+#fillExample, #clearForm {
+  background-color: #eee;
+  color: #333;
+}
+
+
+
+#output {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #f9f5ff;
+  border-left: 4px solid #764ba2;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 20px;
+}
